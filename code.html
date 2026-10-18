@@ -1,0 +1,1217 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="ru"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>International Language House (ILH) — Онлайн и офлайн обучение иностранным языкам в Бресте</title>
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Custom Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#2563EB',
+              cobalt: '#1D4ED8',
+              deep: '#1E40AF',
+              navy: '#0B132B',
+              lime: '#D2F824',
+              limeHover: '#BCE813',
+              dark: '#0F172A',
+              slate: '#334155',
+              softBg: '#F8FAFC',
+              cardBg: '#FFFFFF',
+              border: '#E2E8F0'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif']
+          },
+          boxShadow: {
+            'soft-xl': '0 20px 40px -15px rgba(29, 78, 216, 0.07)',
+            'card': '0 4px 20px -2px rgba(15, 23, 42, 0.05)',
+            'tactile': '0 6px 0 0 rgba(15, 23, 42, 0.08)'
+          },
+          borderRadius: {
+            '4xl': '2rem',
+            '5xl': '2.5rem'
+          }
+        }
+      }
+    }
+  </script>
+<!-- Fonts Preconnect -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style data-purpose="custom-typography">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #0F172A;
+      background-color: #FAFAFD;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+<style data-purpose="decorations">
+    .clip-paperclip {
+      position: relative;
+    }
+    .clip-paperclip::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 14px;
+      height: 28px;
+      border: 3px solid #CBD5E1;
+      border-radius: 9999px;
+      background: #F8FAFC;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body class="bg-[#FAFAFD] text-brand-dark antialiased selection:bg-brand-lime selection:text-black">
+<!-- BEGIN: TopBar -->
+<div class="bg-slate-900 text-slate-300 text-xs border-b border-slate-800" data-purpose="top-utility-bar">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col sm:flex-row justify-between items-center gap-2">
+<div class="flex items-center space-x-6">
+<span class="flex items-center gap-1.5 text-slate-400">
+<svg class="w-3.5 h-3.5 text-brand-lime" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" fill-rule="evenodd"></path></svg>
+          г. Брест, ул. Ленина, 36 (этаж 3)
+        </span>
+<span class="hidden md:inline-flex items-center text-slate-400">
+          Пн-Сб: 08:30 - 20:30, вс: группы выходного дня
+        </span>
+</div>
+<div class="flex items-center space-x-4">
+<div class="flex items-center space-x-2 text-slate-400 text-xs">
+<span class="">Связь:</span>
+<span class="hover:text-white cursor-pointer transition">Telegram</span>
+<span class="">•</span>
+<span class="hover:text-white cursor-pointer transition">Viber</span>
+<span class="">•</span>
+<span class="hover:text-white cursor-pointer transition">WhatsApp</span>
+</div>
+<span class="text-slate-600">|</span>
+<a class="font-bold text-white tracking-wide hover:text-brand-lime transition" href="tel:+375339012621">
+          +375 (33) 901-26-21
+        </a>
+</div>
+</div>
+</div>
+<!-- END: TopBar -->
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm" data-purpose="site-navigation">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3" href="#">
+<div class="w-11 h-11 rounded-2xl bg-brand-blue flex items-center justify-center text-white font-black text-xl shadow-md shadow-blue-500/20">
+          ILH
+        </div>
+<div class="flex flex-col">
+<span class="font-extrabold text-slate-900 tracking-tight text-lg leading-tight uppercase">International</span>
+<span class="font-medium text-xs text-slate-500 tracking-wider">Language House Brest</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+<a class="hover:text-brand-blue transition flex items-center gap-1" href="#courses">
+          Курсы и программы
+          <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
+</a>
+<a class="hover:text-brand-blue transition" href="#teachers">Преподаватели</a>
+<a class="hover:text-brand-blue transition flex items-center gap-1.5" href="#club">
+          English Club
+          <span class="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">NEW</span>
+</a>
+<a class="hover:text-brand-blue transition" href="#why-us">О школе</a>
+<a class="hover:text-brand-blue transition" href="#contacts">Контакты</a>
+</nav>
+<!-- Right Action CTAs -->
+<div class="flex items-center space-x-3">
+<a class="hidden sm:inline-flex items-center px-4 py-2.5 rounded-full text-xs font-black uppercase tracking-wider bg-brand-lime text-slate-950 hover:bg-brand-limeHover shadow-sm transition" href="#test">
+<span class="w-2 h-2 rounded-full bg-emerald-700 mr-2 animate-pulse"></span>
+          Пройти тест
+        </a>
+<a class="inline-flex items-center px-5 py-2.5 rounded-full text-xs font-bold text-white bg-brand-blue hover:bg-brand-cobalt shadow-md shadow-blue-500/20 transition" href="#enroll">
+          Войти / Кабинет
+        </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden" data-purpose="hero-section">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Notice badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-brand-blue text-xs font-bold mb-6">
+<span class="w-2 h-2 rounded-full bg-brand-blue"></span>
+          Набор в группы нового сезона «Весна–Лето 2025»
+        </div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Column: Copy & CTAs -->
+<div class="lg:col-span-7 space-y-6">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-950 tracking-tight leading-[1.08]">
+              Онлайн и офлайн обучение <br class="hidden sm:block">
+<span class="text-brand-blue underline decoration-brand-lime decoration-wavy decoration-2">иностранным языкам</span> <br>
+              в Бресте
+            </h1>
+<p class="text-base sm:text-lg text-slate-600 max-w-2xl font-normal leading-relaxed">
+              Английский, немецкий, французский, итальянский и польский языки. Индивидуально или в мини-группах от 6 до 10 человек с сертифицированными преподавателями МГЛУ и носителями из Великобритании.
+            </p>
+<!-- Buttons -->
+<div class="pt-2 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-between gap-4 px-7 py-4 rounded-full bg-brand-blue text-white font-bold text-base shadow-xl shadow-blue-500/25 hover:bg-brand-cobalt transition group" href="#courses">
+<span class="">Выбрать курс</span>
+<span class="w-8 h-8 rounded-full bg-white text-brand-blue flex items-center justify-center font-bold text-sm group-hover:translate-x-1 transition-transform">→</span>
+</a>
+<a class="inline-flex items-center px-6 py-4 rounded-full bg-white border border-slate-200 text-slate-800 font-bold text-base hover:bg-slate-50 hover:border-slate-300 shadow-sm transition" href="#test">
+                Бесплатное тестирование
+              </a>
+</div>
+<!-- Micro Trust Badges -->
+<div class="pt-6 grid grid-cols-3 gap-3 border-t border-slate-200/80 max-w-lg">
+<div class="flex items-center gap-2 text-xs font-medium text-slate-600">
+<span class="w-7 h-7 rounded-xl bg-lime-100 text-lime-900 flex items-center justify-center font-black text-xs">✓</span>
+<span class="">Индивидуально<br><b class="text-slate-900">от 35 BYN / 60 мин</b></span>
+</div>
+<div class="flex items-center gap-2 text-xs font-medium text-slate-600">
+<span class="w-7 h-7 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center font-black text-xs">👥</span>
+<span class="">Мини-группы<br><b class="text-slate-900">от 6 до 10 чел.</b></span>
+</div>
+<div class="flex items-center gap-2 text-xs font-medium text-slate-600">
+<span class="w-7 h-7 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-black text-xs">💻</span>
+<span class="">Тест онлайн<br><b class="text-slate-900">English Club в подарок</b></span>
+</div>
+</div>
+</div>
+<!-- Right Column: Hero Visual Image Card -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<!-- Rounded Photo Container -->
+<div class="relative overflow-hidden rounded-[2.5rem] bg-slate-100 shadow-2xl border-4 border-white aspect-[4/4.5]">
+<img alt="Студенты на занятии в центре ILH в Бресте" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4_vmIjqY5XUAjVOBiasC7Yza76jMnCoPm6s8h84HoZt1y0-oqyHDFrZ0VkEVK_mDBbOoDh8_ZClG1hMSCYwLYDD89u9U5kJ_7mrrt-0YroRLhAduOXLaw9Ir3XGaPXLokoOvjS4LthEONNJn1jrI15HUTRaq7WGR2FeY1EqjXl4KBPCLB9unnuxSbjhIhYHURHTszIg77XIRO_Zg_ZjiVkH3TBsW1Ztu66qGWN_KaZlB-JPx8Kw7L">
+<!-- Floating Badge Top -->
+<div class="absolute top-5 left-5 bg-brand-blue text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-brand-lime"></span>
+                  Привет, Брест! 💬
+                </div>
+<!-- Floating Badge Bottom -->
+<div class="absolute bottom-5 inset-x-5 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-lg border border-white flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-brand-lime text-slate-900 flex items-center justify-center font-bold text-sm shrink-0">
+                    ILH
+                  </div>
+<div>
+<h2 class="text-xs font-bold text-slate-900 leading-tight">Наталия Тулчинская</h2>
+<p class="text-[11px] text-slate-500">сертифицированный преподаватель МГЛУ, 12 лет стажа</p>
+</div>
+</div>
+</div>
+<!-- Decorative Accent Pill -->
+<div class="absolute -bottom-4 -left-4 bg-brand-lime text-slate-950 font-black px-4 py-2 rounded-2xl text-xs shadow-md transform -rotate-3 hidden sm:block">
+                ⚡ 98% сдали экзамен B2/C1
+              </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: QuickSelectorWidget -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4 mb-16" data-purpose="course-filter-widget">
+<div class="bg-white rounded-3xl p-4 sm:p-6 shadow-xl shadow-slate-200/50 border border-slate-100">
+<div class="flex items-center justify-between mb-4 px-2">
+<div class="flex items-center gap-2">
+<span class="text-brand-blue font-bold text-sm">Быстрый подбор группы и формата</span>
+<span class="text-xs text-slate-400 hidden sm:inline">• Подберите формат занятий за 1 минуту</span>
+</div>
+<span class="text-xs font-semibold text-brand-blue hover:underline cursor-pointer">
+            ✨ Не знаете свой уровень? Пройдите тест
+          </span>
+</div>
+<form class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" onsubmit="event.preventDefault();">
+<!-- Dropdown 1 -->
+<div>
+<label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">1. Язык обучения</label>
+<div class="relative">
+<select class="w-full bg-slate-50 border-slate-200 rounded-2xl py-3 px-4 text-xs font-semibold text-slate-800 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue">
+<option selected="">🇬🇧 Английский язык</option>
+<option>🇩🇪 Немецкий язык</option>
+<option>🇫🇷 Французский язык</option>
+<option>🇵🇱 Польский язык</option>
+<option>🇮🇹 Итальянский язык</option>
+</select>
+</div>
+</div>
+<!-- Dropdown 2 -->
+<div>
+<label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">2. Уровень подготовки</label>
+<div class="relative">
+<select class="w-full bg-slate-50 border-slate-200 rounded-2xl py-3 px-4 text-xs font-semibold text-slate-800 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue">
+<option selected="">A1 — Элементарный (Beginner)</option>
+<option>A2 — Базовый (Pre-Intermediate)</option>
+<option>B1 — Средний (Intermediate)</option>
+<option>B2 — Выше среднего (Upper-Int)</option>
+<option>C1 — Продвинутый (Advanced)</option>
+<option>Подготовка к ЦТ / ЦЭ</option>
+</select>
+</div>
+</div>
+<!-- Dropdown 3 -->
+<div>
+<label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">3. Время занятий</label>
+<div class="relative">
+<select class="w-full bg-slate-50 border-slate-200 rounded-2xl py-3 px-4 text-xs font-semibold text-slate-800 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue">
+<option selected="">Вечер: 18:30 - 20:00 (Будни)</option>
+<option>Утро: 09:00 - 10:30 (Будни)</option>
+<option>День: 15:00 - 16:30 (Будни)</option>
+<option>Группа выходного дня (Сб-Вс)</option>
+<option>Индивидуальный график</option>
+</select>
+</div>
+</div>
+<!-- Action Button -->
+<div class="flex items-end">
+<button class="w-full py-3.5 px-6 rounded-2xl bg-brand-blue hover:bg-brand-cobalt text-white font-black text-xs uppercase tracking-wider shadow-md shadow-blue-500/30 transition flex items-center justify-center gap-2" type="button">
+<span class="">Подобрать группу</span>
+<span class="">→</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+<!-- END: QuickSelectorWidget -->
+<!-- BEGIN: DirectionCardsSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20" data-purpose="registration-cta-card" id="enroll">
+<div class="bg-brand-blue rounded-[2.5rem] p-8 sm:p-14 text-white shadow-2xl shadow-blue-500/20 relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Left Info -->
+<div class="lg:col-span-6 space-y-6">
+<span class="inline-block bg-brand-lime text-slate-950 text-xs font-black uppercase px-3.5 py-1.5 rounded-full">
+              Бесплатный первый урок + подарок
+            </span>
+<h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+              Запишитесь на пробное занятие и тестирование уровня
+            </h2>
+<p class="text-blue-100 text-sm sm:text-base leading-relaxed font-normal">
+              Мы определим точный уровень языка по международной шкале CEFR, подберем комфортную группу и подарим <b class="text-white">доступ к разговорному клубу English Club на неделю.</b>
+</p>
+<div class="space-y-3 pt-2 text-xs sm:text-sm font-semibold">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-brand-lime text-slate-950 flex items-center justify-center text-xs font-black">✓</span>
+<span class="">Ни к чему не обязывает</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-brand-lime text-slate-950 flex items-center justify-center text-xs font-black">✓</span>
+<span class="">Очно в центре или онлайн</span>
+</div>
+</div>
+</div>
+<!-- Right Form Card -->
+<div class="lg:col-span-6">
+<div class="bg-white rounded-3xl p-6 sm:p-8 text-slate-900 shadow-2xl">
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Спасибо! Заявка принята. Методист ILH перезвонит вам в течение 15 минут.');">
+<div>
+<label class="block text-xs font-bold text-slate-600 uppercase mb-1">Ваше имя</label>
+<input class="w-full bg-slate-50 border border-slate-200 rounded-2xl py-3 px-4 text-xs font-semibold focus:ring-2 focus:ring-brand-blue" placeholder="Константин" required="" type="text">
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-600 uppercase mb-1">Номер телефона (A1, МТС, Life:))</label>
+<input class="w-full bg-slate-50 border border-slate-200 rounded-2xl py-3 px-4 text-xs font-semibold focus:ring-2 focus:ring-brand-blue" placeholder="+375 (29) 123-45-67" required="" type="tel">
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-bold text-slate-600 uppercase mb-1">Язык</label>
+<select class="w-full bg-slate-50 border border-slate-200 rounded-2xl py-3 px-3 text-xs font-semibold focus:ring-2 focus:ring-brand-blue">
+<option>🇬🇧 Английский язык</option>
+<option>🇩🇪 Немецкий язык</option>
+<option>🇵🇱 Польский язык</option>
+<option>🇫🇷 Французский язык</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-600 uppercase mb-1">Удобное время</label>
+<select class="w-full bg-slate-50 border border-slate-200 rounded-2xl py-3 px-3 text-xs font-semibold focus:ring-2 focus:ring-brand-blue">
+<option>Вечер (18:30–21:00)</option>
+<option>Утро (09:00–12:00)</option>
+<option>День (14:00–17:00)</option>
+<option>Выходные дни</option>
+</select>
+</div>
+</div>
+<button class="w-full py-4 rounded-2xl bg-brand-lime hover:bg-brand-limeHover text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg transition" type="submit">
+                  Записаться и получить 7 дней клуба →
+                </button>
+<p class="text-[10px] text-slate-400 text-center leading-tight">
+                  Нажимая кнопку, вы подтверждаете согласие на обработку персональных данных в соответствии с Законом РБ.
+                </p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section><section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24" data-purpose="learning-directions">
+<!-- Big Blue Container -->
+<div class="bg-brand-blue rounded-[2.5rem] p-6 sm:p-10 lg:p-12 text-white relative shadow-2xl shadow-blue-500/15 overflow-hidden">
+<div class="max-w-xl mb-10">
+<h2 class="text-2xl sm:text-3xl font-black tracking-tight mb-2">Направления обучения</h2>
+<p class="text-blue-100 text-sm font-normal">
+            Программы для любых целей и стартовых шагов иностранного языка: свободного общения, переезда, сдачи международных экзаменов.
+          </p>
+</div>
+<!-- 5 Direction Cards with paperclip style -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5">
+<!-- Direction 1 -->
+<div class="bg-white rounded-3xl p-5 text-slate-900 flex flex-col justify-between h-56 shadow-md relative clip-paperclip group hover:-translate-y-1 transition duration-200">
+<div>
+<span class="inline-block text-[11px] font-bold text-brand-blue bg-blue-50 px-2 py-0.5 rounded-full mb-3">Базовый &amp; PRO</span>
+<h3 class="font-extrabold text-base leading-snug">Основы английского</h3>
+<p class="text-xs text-slate-400 mt-1">Для жизни, путешествий и карьеры</p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-slate-100">
+<span class="text-2xl">🇬🇧</span>
+<span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full group-hover:bg-brand-blue group-hover:text-white transition">6 курсов</span>
+</div>
+</div>
+<!-- Direction 2 -->
+<div class="bg-white rounded-3xl p-5 text-slate-900 flex flex-col justify-between h-56 shadow-md relative clip-paperclip group hover:-translate-y-1 transition duration-200">
+<div>
+<span class="inline-block text-[11px] font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full mb-3">Goethe / TestDaF</span>
+<h3 class="font-extrabold text-base leading-snug">Немецкий язык</h3>
+<p class="text-xs text-slate-400 mt-1">A1-C2, Goethe-Zertifikat</p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-slate-100">
+<span class="text-2xl">🇩🇪</span>
+<span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full group-hover:bg-brand-blue group-hover:text-white transition">4 курса</span>
+</div>
+</div>
+<!-- Direction 3 -->
+<div class="bg-white rounded-3xl p-5 text-slate-900 flex flex-col justify-between h-56 shadow-md relative clip-paperclip group hover:-translate-y-1 transition duration-200">
+<div>
+<span class="inline-block text-[11px] font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded-full mb-3">DELF / DALF</span>
+<h3 class="font-extrabold text-base leading-snug">Французский язык</h3>
+<p class="text-xs text-slate-400 mt-1">С нуля, DALF, разговорный</p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-slate-100">
+<span class="text-2xl">🥐</span>
+<span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full group-hover:bg-brand-blue group-hover:text-white transition">3 курса</span>
+</div>
+</div>
+<!-- Direction 4 -->
+<div class="bg-white rounded-3xl p-5 text-slate-900 flex flex-col justify-between h-56 shadow-md relative clip-paperclip group hover:-translate-y-1 transition duration-200">
+<div>
+<span class="inline-block text-[11px] font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded-full mb-3">Карта Поляка &amp; PL</span>
+<h3 class="font-extrabold text-base leading-snug">Итальянский &amp; Польский</h3>
+<p class="text-xs text-slate-400 mt-1">Karta Polaka, уровень A1-C1</p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-slate-100">
+<span class="text-2xl">🇵🇱</span>
+<span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full group-hover:bg-brand-blue group-hover:text-white transition">5 курсов</span>
+</div>
+</div>
+<!-- Direction 5 -->
+<div class="bg-white rounded-3xl p-5 text-slate-900 flex flex-col justify-between h-56 shadow-md relative clip-paperclip group hover:-translate-y-1 transition duration-200">
+<div>
+<span class="inline-block text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full mb-3">Школьникам</span>
+<h3 class="font-extrabold text-base leading-snug">Детская школа &amp; ЦТ</h3>
+<p class="text-xs text-slate-400 mt-1">Для детей от 7-17 лет</p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-slate-100">
+<span class="text-2xl">🧸</span>
+<span class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full group-hover:bg-brand-blue group-hover:text-white transition">8 курсов</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: DirectionCardsSection -->
+<!-- BEGIN: PopularCoursesSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24" data-purpose="popular-courses" id="courses">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+<div>
+<span class="text-xs font-bold text-brand-blue tracking-wider uppercase mb-1 block">Образовательные программы</span>
+<h2 class="text-3xl font-black text-slate-950 tracking-tight">Популярные курсы школы</h2>
+<p class="text-slate-500 text-sm mt-1">Обучение очно в группах до 10 человек или индивидуально с наставником</p>
+</div>
+<a class="text-xs font-bold text-brand-blue hover:underline flex items-center gap-1" href="#test">
+          Все курсы и международные базы →
+        </a>
+</div>
+<!-- 6 Course Cards (Grid 3x2) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+<!-- Card 1 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-card flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="bg-slate-900 text-white text-[11px] font-bold px-3 py-1 rounded-full">Хит сезона!</span>
+<span class="text-xs font-medium text-slate-500">Офлайн / Онлайн</span>
+</div>
+<div class="flex items-center justify-between mb-3 bg-blue-50/60 p-3 rounded-2xl">
+<div>
+<span class="text-[10px] font-extrabold uppercase text-brand-blue tracking-wider">General English</span>
+<p class="text-lg font-black text-slate-900">A1 — C1</p>
+</div>
+<span class="text-2xl">🇬🇧 🗣️</span>
+</div>
+<h3 class="font-extrabold text-base text-slate-900 mb-2 leading-snug">Разговорный английский: уверенная практическая речь</h3>
+<div class="flex items-center gap-2 text-xs font-bold text-amber-500 mb-3">
+<span class="">★ 4.9</span>
+<span class="text-slate-400 font-normal">(184 отзыва)</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#basic_english</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#communication</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#c1_verb</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs text-slate-500 py-3 border-y border-slate-100 mb-4">
+<div class="">Теория: <b class="text-slate-800">48 ак. ч.</b></div>
+<div class="">Практика: <b class="text-slate-800">64 ак. ч.</b></div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<img alt="Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxYFUk2nobhUo2xak0Xu7D4l8dv2vaoToteXl4wsZlJcvdxsEB9u1oQzppDEfOmtjnzqYJ7rdShYK3yRZk_wl7tDH52Ptwg5KqnOVvr70pPwlpiUGV8-_L-G1xtBTjA-8v_JDB8hSXvgaoT-a1zyamw2Pr6c5RV9Earj65Clks1txNeTiFesvkGxA6rjhmTLyig1ZqWOQv4GU-MUYMzIa6nzofDYfyhNKUFUaRWI7RAEUnBg1AdGdv">
+<span class="text-xs font-semibold text-slate-700">Джеймс Харрисон (UK)</span>
+</div>
+<div class="text-right">
+<span class="text-[10px] text-slate-400 block">Стоимость:</span>
+<span class="font-black text-sm text-slate-900">240 BYN <span class="text-[10px] font-normal text-slate-500">/мес</span></span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="w-full py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50">Подробнее</button>
+<button class="w-full py-2.5 rounded-xl bg-brand-blue hover:bg-brand-cobalt text-xs font-bold text-white shadow-sm">Записаться →</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-card flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="bg-amber-100 text-amber-900 text-[11px] font-bold px-3 py-1 rounded-full">Сертификат</span>
+<span class="text-xs font-medium text-slate-500">Интенсив • Гарант 7+</span>
+</div>
+<div class="flex items-center justify-between mb-3 bg-amber-50/60 p-3 rounded-2xl">
+<div>
+<span class="text-[10px] font-extrabold uppercase text-amber-800 tracking-wider">Экзамены</span>
+<p class="text-lg font-black text-slate-900">IELTS / TOEFL</p>
+</div>
+<span class="text-2xl">🎓 🌍</span>
+</div>
+<h3 class="font-extrabold text-base text-slate-900 mb-2 leading-snug">Подготовка к экзаменам: IELTS &amp; TOEFL Academic</h3>
+<div class="flex items-center gap-2 text-xs font-bold text-amber-500 mb-3">
+<span class="">★ 5.0</span>
+<span class="text-slate-400 font-normal">(92 отзыва)</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#IELTS_7.0</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#study_abroad</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#academic</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs text-slate-500 py-3 border-y border-slate-100 mb-4">
+<div class="">Теория: <b class="text-slate-800">36 ак. ч.</b></div>
+<div class="">Практика: <b class="text-slate-800">54 ак. ч.</b></div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<img alt="Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk6Cf4s5ninHFsa-yHTDPqlysWHoWVzIpu1IckynXpWXeCxowr8RwI7u1fJ_WIGxThnSz5phe7thUClhhqAW7LH-DyYNKu8SJhcyI3qvQs9VeyUieeUGnLbrYgWNW2jiOyYLPTbPsHySDJ526JYBjTW_NsE5tGVEuBYU1cKzKxKe7LHTM75k2XvzutyZrey6x1flu-bMAfogbz0TgYHOJHZXtVIwZheeUAGNPQa8pJZQ219rua7gxN">
+<span class="text-xs font-semibold text-slate-700">Ольга Ковалева (DELTA)</span>
+</div>
+<div class="text-right">
+<span class="text-[10px] text-slate-400 block">Стоимость:</span>
+<span class="font-black text-sm text-slate-900">290 BYN <span class="text-[10px] font-normal text-slate-500">/мес</span></span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="w-full py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50">Подробнее</button>
+<button class="w-full py-2.5 rounded-xl bg-brand-blue hover:bg-brand-cobalt text-xs font-bold text-white shadow-sm">Записаться →</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-card flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="bg-emerald-100 text-emerald-900 text-[11px] font-bold px-3 py-1 rounded-full">Немецкий A1-B2</span>
+<span class="text-xs font-medium text-slate-500">Польза и работа</span>
+</div>
+<div class="flex items-center justify-between mb-3 bg-red-50/50 p-3 rounded-2xl">
+<div>
+<span class="text-[10px] font-extrabold uppercase text-red-700 tracking-wider">Deutschkurs</span>
+<p class="text-lg font-black text-slate-900">Goethe B1/B2</p>
+</div>
+<span class="text-2xl">🇩🇪 🍺</span>
+</div>
+<h3 class="font-extrabold text-base text-slate-900 mb-2 leading-snug">Немецкий с нуля до B2: подготовка к Goethe-Zertifikat</h3>
+<div class="flex items-center gap-2 text-xs font-bold text-amber-500 mb-3">
+<span class="">★ 4.8</span>
+<span class="text-slate-400 font-normal">(112 отзывов)</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#Goethe</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#goethe_a1_b2</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#berufsgeld</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs text-slate-500 py-3 border-y border-slate-100 mb-4">
+<div class="">Теория: <b class="text-slate-800">40 ак. ч.</b></div>
+<div class="">Практика: <b class="text-slate-800">72 ак. ч.</b></div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<img alt="Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV9PiDkoU5JIHZAp3vntLv8dLGf7DxySW02KrbinAN3UmbKOenDm4iepXsAyuT0oAOkksSrruAVFHXGrQ8PpeGSG8ONP7aLDKTjb9eZuU6uPSvl1PiuByTJ9lqP_EmRX9dMFc-I_WnpRKW3Xm8f2G2BE0s1QpOGVr3aj6Tgf4kTv5jF0NE6Ez2iDHtulrFINbA4RCoNic9JrWQykQc_pwet3PTbuVbhhIirAoi-WfF5LuEg1mplXbk">
+<span class="text-xs font-semibold text-slate-700">Анна Смирнова (Goethe)</span>
+</div>
+<div class="text-right">
+<span class="text-[10px] text-slate-400 block">Стоимость:</span>
+<span class="font-black text-sm text-slate-900">250 BYN <span class="text-[10px] font-normal text-slate-500">/мес</span></span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="w-full py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50">Подробнее</button>
+<button class="w-full py-2.5 rounded-xl bg-brand-blue hover:bg-brand-cobalt text-xs font-bold text-white shadow-sm">Записаться →</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-card flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="bg-purple-100 text-purple-900 text-[11px] font-bold px-3 py-1 rounded-full">DELF/DALF</span>
+<span class="text-xs font-medium text-slate-500">Живая группа</span>
+</div>
+<div class="flex items-center justify-between mb-3 bg-purple-50/50 p-3 rounded-2xl">
+<div>
+<span class="text-[10px] font-extrabold uppercase text-purple-700 tracking-wider">Французский</span>
+<p class="text-lg font-black text-slate-900">A1 — B2</p>
+</div>
+<span class="text-2xl">🇫🇷 ☕</span>
+</div>
+<h3 class="font-extrabold text-base text-slate-900 mb-2 leading-snug">Французский язык: грамматика, фонетика и диалоги</h3>
+<div class="flex items-center gap-2 text-xs font-bold text-amber-500 mb-3">
+<span class="">★ 4.85</span>
+<span class="text-slate-400 font-normal">(64 отзыва)</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#paris_dialect</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#delf</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#carnet</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs text-slate-500 py-3 border-y border-slate-100 mb-4">
+<div class="">Теория: <b class="text-slate-800">32 ак. ч.</b></div>
+<div class="">Практика: <b class="text-slate-800">48 ак. ч.</b></div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<img alt="Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn2mwpoi3Fb1hSc4FUhxSY132MzVi3iSILlF1_jKaS2z2MuWS_gNtwLjQiVWgwa5hr5y8r2JHWn06W9JJeE3gmIa4z3Wp7TR3OEmei-xMMHyM0CWVutw_mPMsbhCKDy4aKSlptmpgWuLMqyciXSKi2hQc3WNWFCyNkOZPF8an4cTjN3MBLU8Bs01lt8PbiJBbYavkTqCJiOyLX0K_9srcrtobmV5hd0Xa_upPnU8oahRCFqpm1ZxLv">
+<span class="text-xs font-semibold text-slate-700">Поль Ансельм (МГЛУ)</span>
+</div>
+<div class="text-right">
+<span class="text-[10px] text-slate-400 block">Стоимость:</span>
+<span class="font-black text-sm text-slate-900">230 BYN <span class="text-[10px] font-normal text-slate-500">/мес</span></span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="w-full py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50">Подробнее</button>
+<button class="w-full py-2.5 rounded-xl bg-brand-blue hover:bg-brand-cobalt text-xs font-bold text-white shadow-sm">Записаться →</button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-card flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="bg-rose-100 text-rose-900 text-[11px] font-bold px-3 py-1 rounded-full">Карта Поляка</span>
+<span class="text-xs font-medium text-slate-500">Интенсив</span>
+</div>
+<div class="flex items-center justify-between mb-3 bg-red-50/50 p-3 rounded-2xl">
+<div>
+<span class="text-[10px] font-extrabold uppercase text-rose-700 tracking-wider">Język polski / IT</span>
+<p class="text-lg font-black text-slate-900">Karta Polaka</p>
+</div>
+<span class="text-2xl">🇵🇱 🍕</span>
+</div>
+<h3 class="font-extrabold text-base text-slate-900 mb-2 leading-snug">Польский на Карту Поляка и Итальянский для путешествий</h3>
+<div class="flex items-center gap-2 text-xs font-bold text-amber-500 mb-3">
+<span class="">★ 4.95</span>
+<span class="text-slate-400 font-normal">(140 отзывов)</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#karta_polaka</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#interview_pl</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#consul_interview</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs text-slate-500 py-3 border-y border-slate-100 mb-4">
+<div class="">Теория: <b class="text-slate-800">30 ак. ч.</b></div>
+<div class="">Практика: <b class="text-slate-800">50 ак. ч.</b></div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<img alt="Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbnAZsI5ZnMnhIInEQLwt_8OqfRBY88fMjutlhqZDypBCosMdiyyumxfEhzK0hsCaxhNNXqUTs17SPQRyzitcNafJuWDFNvPNlK-6m1J6l8pXgMAG0Is1KH1iz6FRGN_85ztfFeBzDo6kBD1mkT9oOwpA9x6bwKSaKDF16hZOFKk7eQbNoJAryeNyXawEzInySQburZtTNqEXqSRWq-zohmhGsBcrTriGQnGE2djanyyuei-Yxs_uV">
+<span class="text-xs font-semibold text-slate-700">Матеуш Новак (Варшава)</span>
+</div>
+<div class="text-right">
+<span class="text-[10px] text-slate-400 block">Стоимость:</span>
+<span class="font-black text-sm text-slate-900">210 BYN <span class="text-[10px] font-normal text-slate-500">/мес</span></span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="w-full py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50">Подробнее</button>
+<button class="w-full py-2.5 rounded-xl bg-brand-blue hover:bg-brand-cobalt text-xs font-bold text-white shadow-sm">Записаться →</button>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-card flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="bg-blue-100 text-blue-900 text-[11px] font-bold px-3 py-1 rounded-full">Школьники 5–11</span>
+<span class="text-xs font-medium text-slate-500">Средний балл 86+</span>
+</div>
+<div class="flex items-center justify-between mb-3 bg-indigo-50/50 p-3 rounded-2xl">
+<div>
+<span class="text-[10px] font-extrabold uppercase text-indigo-700 tracking-wider">Школьная база</span>
+<p class="text-lg font-black text-slate-900">Подготовка к ЦТ</p>
+</div>
+<span class="text-2xl">📝 🎯</span>
+</div>
+<h3 class="font-extrabold text-base text-slate-900 mb-2 leading-snug">Английский для школьников и интенсивная подготовка к ЦТ/ЦЭ</h3>
+<div class="flex items-center gap-2 text-xs font-bold text-amber-500 mb-3">
+<span class="">★ 4.92</span>
+<span class="text-slate-400 font-normal">(210 отзывов)</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#ct_test_100</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#schoolbase</span>
+<span class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">#test</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs text-slate-500 py-3 border-y border-slate-100 mb-4">
+<div class="">Теория: <b class="text-slate-800">54 ак. ч.</b></div>
+<div class="">Практика: <b class="text-slate-800">80 ак. ч.</b></div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<img alt="Avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcDxUjzUVvtgE8RVQmiXAqzKp9aAsy-cjQq9JOzaJCl81V6iK7_BmrQ5ahT8H-vUe7kCxWekrqC9eiPsRt9iNa9BokLMXCe37duLa_IjFRvpmSqqcxiG7L2A-1d_8Fo0dQ-BdSFVQIxNXM0xHfN2v5z-zzBabjx8CfnOIpHaW5SXQ7wyeH9LJ7JZHUNnG1WcSpJzSQz-pt_5uGJ42IuWsh55fXML9u9fX_pOydXHTQ0arFEyWG98ZD">
+<span class="text-xs font-semibold text-slate-700">Артем Николаевич (БрГУ/ЦТ)</span>
+</div>
+<div class="text-right">
+<span class="text-[10px] text-slate-400 block">Стоимость:</span>
+<span class="font-black text-sm text-slate-900">190 BYN <span class="text-[10px] font-normal text-slate-500">/мес</span></span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="w-full py-2.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-50">Подробнее</button>
+<button class="w-full py-2.5 rounded-xl bg-brand-blue hover:bg-brand-cobalt text-xs font-bold text-white shadow-sm">Записаться →</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PopularCoursesSection -->
+<!-- BEGIN: B2BCorporateBanner -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20" data-purpose="corporate-b2b">
+<div class="bg-slate-950 text-white rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-slate-800">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-2xl bg-brand-lime/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-2xl shrink-0">
+            💼
+          </div>
+<div>
+<span class="text-[10px] font-black uppercase text-brand-lime tracking-widest block mb-0.5">Для брестских и обл. компаний</span>
+<h3 class="text-lg sm:text-xl font-extrabold text-white">Корпоративное обучение иностранных языков под ключ</h3>
+<p class="text-xs sm:text-sm text-slate-400 mt-0.5">Отраслевая специфика: IT, логистика, медицина, ВЭД. Электронный документооборот.</p>
+</div>
+</div>
+<button class="whitespace-nowrap px-6 py-3.5 rounded-full bg-brand-lime text-slate-950 font-black text-xs uppercase tracking-wider hover:bg-brand-limeHover transition shadow-md">
+          Запросить КП для компании →
+        </button>
+</div>
+</section>
+<!-- END: B2BCorporateBanner -->
+<!-- BEGIN: StatsStrip -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24" data-purpose="metrics-strip">
+<div class="bg-brand-lime rounded-3xl p-8 sm:p-12 shadow-xl shadow-lime-500/10">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-slate-950">
+<div class="text-center sm:text-left border-r border-slate-900/10 pr-4">
+<div class="text-4xl sm:text-5xl font-black tracking-tight mb-1">12+ лет</div>
+<p class="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">На рынке языкового образования в Бресте с 2012 года</p>
+</div>
+<div class="text-center sm:text-left border-r border-slate-900/10 pr-4">
+<div class="text-4xl sm:text-5xl font-black tracking-tight mb-1">6–10</div>
+<p class="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">человек в мини-группе для максимального вовлечения</p>
+</div>
+<div class="text-center sm:text-left border-r border-slate-900/10 pr-4">
+<div class="text-4xl sm:text-5xl font-black tracking-tight mb-1">87%</div>
+<p class="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">выпускников успешно сдают экзамены на уровне B2–C1</p>
+</div>
+<div class="text-center sm:text-left">
+<div class="text-4xl sm:text-5xl font-black tracking-tight mb-1">100%</div>
+<p class="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">педагогов с сертификатами МГЛУ, CELTA, DELTA</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: StatsStrip -->
+<!-- BEGIN: WhyUsSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24" data-purpose="why-us-section" id="why-us">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-xs font-bold text-brand-blue tracking-wider uppercase mb-1 block">Преимущества обучения</span>
+<h2 class="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">Почему брестчане выбирают центр ILH</h2>
+<p class="text-slate-500 text-sm mt-2">Мы объединили британскую методическую базу с теплым вниманием к каждому ученику в самом центре города.</p>
+</div>
+<!-- 3 Rounded Feature Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-10">
+<!-- Feature 1 -->
+<div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-rose-50 border border-rose-100 flex items-center justify-center text-xl mb-6">
+              🎯
+            </div>
+<h3 class="text-xl font-extrabold text-slate-900 mb-3">Эффективно</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+              Коммуникативный метод без зубрежки. Мы используем оригинальные издания Oxford University Press, Klett и Didier. Вся терминология сразу же закрепляется в живой устной практике каждого занятия.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 space-y-2 text-xs font-semibold text-slate-700">
+<div class="flex items-center gap-2">✓ Преодоление языкового барьера за 3 недели</div>
+<div class="flex items-center gap-2">✓ Инновационная система проверки знаний</div>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-xl mb-6">
+              ☕
+            </div>
+<h3 class="text-xl font-extrabold text-slate-900 mb-3">Удобно</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+              Светлые кондиционированные аудитории в историческом центре Бреста на ул. Ленина, 36. Чайный бар, интерактивные экраны, зоны для занятий, возможность удобного переноса уроков без потери средств.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 space-y-2 text-xs font-semibold text-slate-700">
+<div class="flex items-center gap-2">✓ Центр Бреста с удобным подъездом</div>
+<div class="flex items-center gap-2">✓ Мини-группы строго до 10 человек</div>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-100 flex items-center justify-center text-xl mb-6">
+              🤝
+            </div>
+<h3 class="text-xl font-extrabold text-slate-900 mb-3">Честно и доступно</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+              Демократичная стоимость за академический час и прозрачные условия договора. Никаких скрытых платежей: все материалы уже включены в стоимость курса. Возврат средств при форс-мажоре.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 space-y-2 text-xs font-semibold text-slate-700">
+<div class="flex items-center gap-2">✓ Бесплатные учебные материалы в PDF</div>
+<div class="flex items-center gap-2">✓ Помесячная оплата без кабальных договоров</div>
+</div>
+</div>
+</div>
+<!-- Quick Badges Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm flex items-center gap-3">
+<span class="text-xl">📍</span>
+<div>
+<span class="text-xs font-bold text-slate-900 block leading-tight">ул. Ленина 36</span>
+<span class="text-[11px] text-slate-400">Брест, 3 этаж (напротив парка)</span>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm flex items-center gap-3">
+<span class="text-xl">🏫</span>
+<div>
+<span class="text-xs font-bold text-slate-900 block leading-tight">100% В Классе</span>
+<span class="text-11px text-slate-400">Очное живое обучение + онлайн опции</span>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm flex items-center gap-3">
+<span class="text-xl">📅</span>
+<div>
+<span class="text-xs font-bold text-slate-900 block leading-tight">Гибкий график</span>
+<span class="text-[11px] text-slate-400">Утро, вечер или группы выходного дня</span>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-sm flex items-center gap-3">
+<span class="text-xl">👥</span>
+<div>
+<span class="text-xs font-bold text-slate-900 block leading-tight">Группы до 10 чел</span>
+<span class="text-[11px] text-slate-400">Персональное внимание каждому студенту</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: WhyUsSection -->
+<!-- BEGIN: TeachersSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24" data-purpose="teachers-team" id="teachers">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="text-xs font-bold text-brand-blue tracking-wider uppercase mb-1 block">Команда преподавателей</span>
+<h2 class="text-3xl font-black text-slate-950 tracking-tight">Наши преподаватели — выпускники МГЛУ и носители языка</h2>
+</div>
+<p class="text-slate-500 text-xs sm:text-sm max-w-sm">
+          Каждый педагог прошел строгую сертификацию и регулярную тренинговую переподготовку от аккредитованных центров Cambridge &amp; Goethe-Institut.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+<!-- Teacher 1 -->
+<div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-card flex flex-col justify-between">
+<div>
+<div class="h-64 overflow-hidden relative">
+<img alt="Джеймс Харрисон" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJTMge_DX9DZ25nEuCWI1jPwIPzVJSfXG625596iIPfocCTclcT5dCvgFHs5rwn22Uq3fEx-ERC_k_TfGvvG3VfRg9tek702WRw_TbHvOW4urx4gEf1ZwYuQgKY6T01AelrCCMnbtqKuAFjlycEqnvneA7ZKlzv0xD8LARd9fezLel04u_xuyFYvA3tiu5XhuaOuDRvQwapznkwgcMVsak9OmeTBNszErt4crX5gzd5fkIeHy_401g">
+<span class="absolute bottom-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+                🇬🇧 Native Speaker (London)
+              </span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-extrabold text-xl text-slate-900">Джеймс Харрисон</h3>
+<span class="text-xs font-bold text-slate-400">Опыт: 9 лет</span>
+</div>
+<p class="text-xs font-bold text-brand-blue uppercase tracking-wider mb-3">Senior English Instructor, IELTS Expert</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Носитель языка из Великобритании (Бристоль). 9 лет преподавания в международных центрах. Ведет курсы высшего уровня и разговорные клубы (Movie Club &amp; Debates).
+              </p>
+<div class="flex flex-wrap gap-2 text-[11px] font-semibold text-slate-500">
+<span class="bg-blue-50 text-brand-blue px-2 py-0.5 rounded-md">Cambridge CELTA</span>
+<span class="bg-slate-100 px-2 py-0.5 rounded-md">DELTA Module 2</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Teacher 2 -->
+<div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-card flex flex-col justify-between">
+<div>
+<div class="h-64 overflow-hidden relative">
+<img alt="Анна Смирнова" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIiZ7iC0DbCX8dfGO6OHDEWtUpuxLJ5Feeqyi18unMXaTpk5Ov2V50wktupnor0BT2BdPQcOpQ6YwUmFOqP75BW1_Km_7UWKLowI5iMCuzmgepygfg9Y8MGBWM7jVUWEXVCmQ64d1j1dbtfJmcjk7yshZ9anAT_4Oa9jCuwnNK8toUFC8HSi0wsDPdQ11pmIxRAUn-78ZNgTs537c9OBNCwS8rWrKdpWwEM9IPEg_33fJd7idciYAx">
+<span class="absolute bottom-3 left-3 bg-brand-blue text-white text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+                🇩🇪 МГЛУ, Goethe C2
+              </span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-extrabold text-xl text-slate-900">Анна Смирнова</h3>
+<span class="text-xs font-bold text-slate-400">Опыт: 11 лет</span>
+</div>
+<p class="text-xs font-bold text-brand-blue uppercase tracking-wider mb-3">Преподаватель немецкого языка</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Выпускница Минского государственного лингвистического университета, ежегодные стажировки в Мюнхене и Берлине. Подготовка к сдаче Goethe-Zertifikat на высший балл.
+              </p>
+<div class="flex flex-wrap gap-2 text-[11px] font-semibold text-slate-500">
+<span class="bg-amber-50 text-amber-800 px-2 py-0.5 rounded-md">Goethe-Zertifikat C2</span>
+<span class="bg-slate-100 px-2 py-0.5 rounded-md">DAAD Alumna</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Teacher 3 -->
+<div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-card flex flex-col justify-between">
+<div>
+<div class="h-64 overflow-hidden relative">
+<img alt="Елена Ковалева" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACrP9HddrCEwrtQtAzu7toObiex7fAQTGnnKZwhUr5bkKPXF6d1z1Pkskq8DnDvWqJE1knEhmELemW-_JDMgbHnOlG6ITIlND3-LxYuC3GFBHubsCB6znlmJZn7g9DVlb9OfUsymylrAsYkyVOA29S66Evw6_O_5-zo76PXQwqiq0WZ2OF-uc73-RKGxHX4vwLb7m0fSI0UB_bleajsW2eXEBpreW1VvPWdyNTG3POBfAupJfAi968">
+<span class="absolute bottom-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+                🇵🇱 Варшавский Гос. Университет
+              </span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-extrabold text-xl text-slate-900">Елена Ковалева</h3>
+<span class="text-xs font-bold text-slate-400">Опыт: 8 лет</span>
+</div>
+<p class="text-xs font-bold text-brand-blue uppercase tracking-wider mb-3">Польский язык и подготовка к ЦТ</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Изучала полонистику в Варшаве, готовит абитуриентов к собеседованию с консулом и поступлению в польские вузы. Эксперт по ЦТ Брестского региона.
+              </p>
+<div class="flex flex-wrap gap-2 text-[11px] font-semibold text-slate-500">
+<span class="bg-rose-50 text-rose-800 px-2 py-0.5 rounded-md">Certyfikat B1-C2</span>
+<span class="bg-slate-100 px-2 py-0.5 rounded-md">Эксперт ЦТ 2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TeachersSection -->
+<!-- BEGIN: AccreditationsBanner -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24" data-purpose="accreditation-banner">
+<div class="bg-[#0B132B] rounded-3xl p-8 sm:p-12 text-center text-white relative overflow-hidden shadow-2xl">
+<span class="inline-block bg-brand-lime text-slate-950 text-[11px] font-black uppercase tracking-wider px-3.5 py-1 rounded-full mb-4">
+          Международный статус
+        </span>
+<h2 class="text-2xl sm:text-3xl font-black max-w-2xl mx-auto leading-tight mb-4">
+          Единственный языковой центр в Брестском регионе с аккредитацией British English UK
+        </h2>
+<p class="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto mb-8 font-normal leading-relaxed">
+          В 2022 году Отдел контроля соответствия европейским стандартам лингвистического образования подтвердил высший уровень подготовки ILH.
+        </p>
+<!-- Partner Badges -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+<div class="bg-white/5 border border-white/10 rounded-2xl py-3 px-4">
+<span class="text-sm font-black text-brand-lime tracking-wider block">ENGLISH UK</span>
+<span class="text-[10px] text-slate-400">Official Member Partner</span>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-2xl py-3 px-4">
+<span class="text-sm font-black text-white tracking-wider block">CAMBRIDGE</span>
+<span class="text-[10px] text-slate-400">Exam Preparation Center</span>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-2xl py-3 px-4">
+<span class="text-sm font-black text-white tracking-wider block">PEARSON</span>
+<span class="text-[10px] text-slate-400">Assessed Partner</span>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-2xl py-3 px-4">
+<span class="text-sm font-black text-white tracking-wider block">ALTE PARTNER</span>
+<span class="text-[10px] text-slate-400">Institutional Member</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AccreditationsBanner -->
+<!-- BEGIN: EnglishClubSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24" data-purpose="english-speaking-club" id="club">
+<div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-card">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-6 space-y-4">
+<div class="flex items-center gap-2">
+<span class="bg-blue-100 text-brand-blue text-[11px] font-black uppercase px-3 py-1 rounded-full">Живое общение без учебников</span>
+<span class="bg-emerald-100 text-emerald-800 text-[11px] font-bold px-3 py-1 rounded-full">Бесплатно для студентов ILH</span>
+</div>
+<h2 class="text-2xl sm:text-3xl font-black text-slate-900 leading-tight">
+              Разговорный клуб English Club &amp; Movie Nights по субботам
+            </h2>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+              Каждую субботу мы собираемся в уютной гостиной школы на ул. Ленина: смотрим фрагменты сериалов в оригинале, пьем кофе с круассанами, играем в настольные игры и дискутируем на живом английском языке.
+            </p>
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="p-3 bg-slate-50 rounded-2xl border border-slate-100">
+<span class="text-xs font-extrabold text-slate-900 block mb-0.5">🎬 Movie Nights</span>
+<span class="text-[11px] text-slate-500">Просмотры фильмов с субтитрами + разбор сленга</span>
+</div>
+<div class="p-3 bg-slate-50 rounded-2xl border border-slate-100">
+<span class="text-xs font-extrabold text-slate-900 block mb-0.5">🎲 Board Games &amp; Debates</span>
+<span class="text-[11px] text-slate-500">Alias, Codenames, мафия на английском</span>
+</div>
+</div>
+<div class="pt-2 flex items-center gap-4">
+<div>
+<span class="text-xs font-bold text-slate-900 block">Ближайшая встреча: Суббота, 18:00</span>
+<span class="text-[11px] text-slate-500">ул. Ленина, 36 (3 этаж) • Тема: «Cinema &amp; Series»</span>
+</div>
+<span class="text-xs font-bold bg-amber-100 text-amber-900 px-3 py-1.5 rounded-xl">Осталось 4 места</span>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center px-6 py-3 rounded-full bg-brand-blue hover:bg-brand-cobalt text-white font-bold text-xs uppercase tracking-wider shadow-md shadow-blue-500/20 transition" href="#enroll">
+                Забронировать место →
+              </a>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="relative rounded-3xl overflow-hidden aspect-video shadow-lg group">
+<img alt="Разговорный клуб ILH в Бресте" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbySnMoDtGb5nl2Ggllwe6P5J5c6-qeV8eX0qgNbX-gmoa_D0FWttb8awG02QDC0YdpXTu-selP_GRnVogGVwE9ap3izFT0g67TZ7RaspoUuFYoTHA-OZM8Jg8bFB8Q4AwI39TpeBzAwtZUjIC-OHzDwjQ-xej4BI6RCNzsd5Opq2M8esPpI4SZudQqHPHV_Xd6b1hVnFgejFaFm2jFP2fBGnTNyCuKluSu5Mhlle-Kfp-O4AuATcP">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-6">
+<div class="text-white">
+<span class="text-xs font-bold text-brand-lime block">Опыт общения в клубе • ул. Ленина, 36</span>
+<p class="text-sm font-semibold text-slate-200">Чай, кофе, печенье и непринужденная атмосфера ☕🍪</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: EnglishClubSection -->
+<!-- BEGIN: TestimonialsSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24" data-purpose="student-reviews">
+<div class="text-center max-w-xl mx-auto mb-12">
+<span class="text-xs font-bold text-brand-blue tracking-wider uppercase mb-1 block">Реальные истории успеха</span>
+<h2 class="text-3xl font-black text-slate-950 tracking-tight">Что говорят наши студенты в Бресте</h2>
+<p class="text-slate-500 text-xs sm:text-sm mt-1">Более 1200 выпускников делятся своими результатами в Google и Яндекс картах</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Review 1 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-card flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+              ★★★★★
+              <span class="text-[10px] font-bold text-slate-400 ml-1">IT and Business</span>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">
+              «Пришел в ILH, чтобы подтянуть разговорный для собеседований в польскую IT-компанию. За 4 месяца занятий с носителем Джеймсом снял языковой барьер, успешно прошел два технических интервью в Варшаве!»
+            </p>
+</div>
+<div class="flex items-center gap-2.5 pt-3 border-t border-slate-100">
+<div class="w-8 h-8 rounded-full bg-blue-100 text-brand-blue font-bold text-xs flex items-center justify-center">МГ</div>
+<div>
+<span class="text-xs font-bold text-slate-900 block leading-tight">Максим Гончар</span>
+<span class="text-[10px] text-slate-400">Senior QA Engineer</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-card flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+              ★★★★★
+              <span class="text-[10px] font-bold text-slate-400 ml-1">Goethe-Institut</span>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">
+              «Сдавала B2 по немецкому для поступления в Берлинский университет. Анна Смирнова подготовила просто виртуозно: разобрали все ловушки в письменной части. В итоге сдала на 91 балл! Спасибо огромное!»
+            </p>
+</div>
+<div class="flex items-center gap-2.5 pt-3 border-t border-slate-100">
+<div class="w-8 h-8 rounded-full bg-rose-100 text-rose-700 font-bold text-xs flex items-center justify-center">АМ</div>
+<div>
+<span class="text-xs font-bold text-slate-900 block leading-tight">Алина Мирошниченко</span>
+<span class="text-[10px] text-slate-400">Студентка Freie Univ. Berlin</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-card flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+              ★★★★★
+              <span class="text-[10px] font-bold text-slate-400 ml-1">Karta Polaka</span>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">
+              «Благодарю пана Матеуша за польский курс. Занимался 3 месяца и полностью избавился от акцента, отлично выучил историю и праздники Польши. На собеседовании консул похвалил произношение!»
+            </p>
+</div>
+<div class="flex items-center gap-2.5 pt-3 border-t border-slate-100">
+<div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 font-bold text-xs flex items-center justify-center">ДГ</div>
+<div>
+<span class="text-xs font-bold text-slate-900 block leading-tight">Дмитрий Гомонюк</span>
+<span class="text-[10px] text-slate-400">Брест, логистика</span>
+</div>
+</div>
+</div>
+<!-- Review 4 -->
+<div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-card flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-amber-400 text-xs mb-3">
+              ★★★★★
+              <span class="text-[10px] font-bold text-slate-400 ml-1">ЦТ 96 баллов</span>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">
+              «Привела сына на подготовку к ЦТ по английскому к Артему Николаевичу. Результат — 96 баллов! Поступил на бюджет в БГУ! Очень благодарна преподавателю за чуткость и системную подачу.»
+            </p>
+</div>
+<div class="flex items-center gap-2.5 pt-3 border-t border-slate-100">
+<div class="w-8 h-8 rounded-full bg-amber-100 text-amber-900 font-bold text-xs flex items-center justify-center">КГ</div>
+<div>
+<span class="text-xs font-bold text-slate-900 block leading-tight">Кристина Грицевич</span>
+<span class="text-[10px] text-slate-400">Мама выпускника</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: LeadGenFormSection -->
+
+<!-- END: LeadGenFormSection -->
+</main>
+<!-- BEGIN: SiteFooter -->
+<footer class="bg-slate-950 text-slate-400 text-xs border-t border-slate-800 pt-16 pb-12" data-purpose="site-footer" id="contacts">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+<!-- Col 1: About School -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-2xl bg-brand-blue flex items-center justify-center text-white font-black text-lg">
+              ILH
+            </div>
+<span class="font-black text-base text-white tracking-wider uppercase">International Language House</span>
+</div>
+<p class="text-xs text-slate-400 leading-relaxed pr-6">
+            Полноформатная школа иностранных языков в Бресте с 2012 года. Аккредитованные программы, опытные наставники, высокие результаты выпускников на международных экзаменах.
+          </p>
+<div class="flex items-center space-x-3 text-slate-300 pt-2">
+<a class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-brand-blue transition" href="#">VK</a>
+<a class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-brand-blue transition" href="#">TG</a>
+<a class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-brand-blue transition" href="#">IG</a>
+<a class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-brand-blue transition" href="#">WA</a>
+</div>
+</div>
+<!-- Col 2: Directions -->
+<div>
+<h4 class="font-bold text-white uppercase text-xs tracking-wider mb-4">Направления</h4>
+<ul class="space-y-2.5">
+<li class=""><a class="hover:text-white transition" href="#courses">Разговорный английский</a></li>
+<li class=""><a class="hover:text-white transition" href="#courses">Подготовка к IELTS / TOEFL</a></li>
+<li class=""><a class="hover:text-white transition" href="#courses">Немецкий язык (A1–B2)</a></li>
+<li class=""><a class="hover:text-white transition" href="#courses">Польский на Карту Поляка</a></li>
+<li class=""><a class="hover:text-white transition" href="#courses">Французский язык DELF</a></li>
+<li class=""><a class="hover:text-white transition" href="#courses">Школьная программа и ЦТ</a></li>
+<li class=""><a class="hover:text-white transition" href="#corporate">Корпоративным клиентам</a></li>
+</ul>
+</div>
+<!-- Col 3: About School Links -->
+<div>
+<h4 class="font-bold text-white uppercase text-xs tracking-wider mb-4">О школе</h4>
+<ul class="space-y-2.5">
+<li class=""><a class="hover:text-white transition" href="#teachers">Преподаватели ILH</a></li>
+<li class=""><a class="hover:text-white transition" href="#why-us">Наши преимущества</a></li>
+<li class=""><a class="hover:text-white transition" href="#club">English Club &amp; Кинопоказы</a></li>
+<li class=""><a class="hover:text-white transition" href="#reviews">Отзывы студентов</a></li>
+<li class=""><a class="hover:text-white transition" href="#test">Онлайн тест уровня</a></li>
+<li class=""><a class="hover:text-white transition" href="#faq">Расписание занятий</a></li>
+</ul>
+</div>
+<!-- Col 4: Contacts & Address -->
+<div>
+<h4 class="font-bold text-white uppercase text-xs tracking-wider mb-4">Контакты в Бресте</h4>
+<div class="space-y-3">
+<div>
+<span class="text-[10px] text-slate-500 block uppercase font-bold">Адрес центра:</span>
+<span class="text-white font-medium">г. Брест, ул. Ленина, 36 (3 этаж)</span>
+<p class="text-[11px] text-slate-400">Ориентир: рядом с областным драматическим театром</p>
+</div>
+<div>
+<span class="text-[10px] text-slate-500 block uppercase font-bold">Режим работы:</span>
+<span class="text-slate-300">Пн-Пт: 08:30 - 21:00</span><br>
+<span class="text-slate-300">Сб: 09:00 - 18:00 (клубы и ЦТ)</span><br>
+<span class="text-slate-300">Вс: по расписанию групп выходного дня</span>
+</div>
+<div>
+<span class="text-[10px] text-slate-500 block uppercase font-bold">Телефоны:</span>
+<a class="text-white font-bold hover:text-brand-lime transition block" href="tel:+375339012621">+375 (33) 901-26-21</a>
+<a class="text-white font-bold hover:text-brand-lime transition block" href="tel:+375298810015">+375 (29) 881-00-15</a>
+<span class="text-[11px] text-slate-400">Тел.: (0162) 29-14-32</span>
+</div>
+<div>
+<span class="text-[10px] text-slate-500 block uppercase font-bold">E-mail:</span>
+<span class="text-slate-300">info@ilh.by</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Copyright Bottom Bar -->
+<div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row justify-between items-center text-slate-500 text-[11px] gap-4">
+<div class="">
+          © 2012–2025 ООО «Интернейшнл Лэнгвидж Хаус» (УНП 291478109). Регистрация Брестского облисполкома. Все права защищены.
+        </div>
+<div class="flex items-center space-x-4">
+<a class="hover:text-slate-400 transition" href="#">Политика конфиденциальности</a>
+<span class="">•</span>
+<a class="hover:text-slate-400 transition" href="#">Договор публичной оферты</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: SiteFooter -->
+
+
+</body></html>
